@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #03045E;
+    --secondary-color: #90E0EF;
+    --accent-color: #00B4D8;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #212121;
+    font-family: "Oswald", serif; 
+    font-size: 1.3rem;
+    position: relative;
+}
+.header {
+    background: linear-gradient(20deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+#cityInput{
+    font-size: 1.3rem;
+}
+#searchForm{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.search-btn {
+    width: 12rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.search-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    position: relative;
+}
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 1rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.current-details{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.today-data {
+    background: #0175ad;
+    color: white;
+    padding-block: 2rem;
+    border-radius: 10px;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(9, 57, 106, 0.1);
+    transition: transform 0.2s;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background: linear-gradient(20deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.error-message {
+    background-color: #ca0000;
+    color: #ffebee;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: none;
+    text-align: center;
+}

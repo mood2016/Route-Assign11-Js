@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>WeatherNow</h1>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="search-container">
+            <form id="searchForm">
+                    <input type="text" 
+                           id="cityInput" 
+                           class="search-input" 
+                           placeholder="Search city or country..."
+                           autocomplete="off"
+                           required>
+                    <button class="btn btn-primary search-btn" type="submit">
+                        <i class="material-icons">search</i> Search
+                    </button>
+            </form>
+            <div id="suggestions" class="suggestions"></div>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+        <div id="weatherDisplay" class="row g-4"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <hr class="mt-4">
+            <div class="text-center">
+                <p>&copy; 2024 WeatherNow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
